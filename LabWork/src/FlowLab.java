@@ -1,4 +1,4 @@
-//import java.util.Formatter;// to use ASCII values
+import java.util.Formatter;// to use ASCII values
 import java.util.Random;
 import java.util.Scanner;
 
@@ -43,6 +43,7 @@ public class FlowLab {
 		    	System.out.println("Do you have a red car? (yes, no): ");
 		    	String answer1 = scan.nextLine(); 
 		    	if(answer1 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -52,6 +53,7 @@ public class FlowLab {
 		    	System.out.println("What's your favorite pet's name?: ");
 		    	String answer2 = scan.nextLine();
 		    	if(answer2 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -61,6 +63,7 @@ public class FlowLab {
 		    	System.out.println("What's your lucky number?: ");
 		    	String answer3 = scan.nextLine(); 
 		    	if(answer3 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -70,6 +73,7 @@ public class FlowLab {
 		    	System.out.println("Do you have a favorite quarterback? If so whar is their jersey number?: ");
 		    	String answer4 = scan.nextLine(); 
 		    	if(answer4 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -79,6 +83,7 @@ public class FlowLab {
 		    	System.out.println("What's is the model year of your car?: ");
 		    	String answer5 = scan.nextLine();
 		    	if(answer5 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -88,6 +93,7 @@ public class FlowLab {
 		    	System.out.println("What is the first name of your favorite actor or actress?: ");
 		    	String answer6 = scan.nextLine();
 		    	if(answer6 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
@@ -97,15 +103,12 @@ public class FlowLab {
 		    	System.out.println("Enter a random number between 1 and 50: ");
 		    	String answer7 = scan.nextLine(); 
 		    	if(answer7 != null) {
+		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
 				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
 				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
 		    	}
 		    	break;
-		   default: 
-			   System.out.println("`Thanks %s ${input}, for completing the survey! Your ticket is being processed "
-					+ " please wait...`");
-			   break;
 		}//end of switch statement
 	}else {
 		System.out.println("Please return later to complete the survey! Have a nice day");
