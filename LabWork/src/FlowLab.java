@@ -1,4 +1,3 @@
-import java.util.Formatter;// to use ASCII values
 import java.util.Random;
 import java.util.Scanner;
 
