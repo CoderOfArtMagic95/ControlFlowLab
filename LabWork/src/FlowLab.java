@@ -6,13 +6,6 @@ public class FlowLab {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-	/*  Commented because it throws an error
-	//static classes and methods are called this way because static keyword makes it unable to create objects;	
-    AsciiChars.printLowerCase('A');
-    AsciiChars.printUpperCase('b');
-    AsciiChars.printNumbers();	
-		*/
 	Scanner scan = new Scanner(System.in);
 	System.out.println("Please enter your name");
 	String input = scan.nextLine();
