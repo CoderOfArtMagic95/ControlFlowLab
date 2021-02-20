@@ -54,8 +54,13 @@ public class FlowLab {
 		    	String answer3 = scan.nextLine(); 
 		    	int newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer3);
 		    	if(newMagicBall > 75) {
-		    		newMagicBall = newMagicBall -75;
-		    	}
+		    		newMagicBall = newMagicBall - 75;
+		    		if(newMagicBall > 100) {
+		    			newMagicBall = newMagicBall - 100;
+		    		}else if(newMagicBall > 1000) {
+		    			newMagicBall = newMagicBall - 1000;
+		    		}//end of else if
+		    	}//end of outer if statement
 		    	if(answer3 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
@@ -68,8 +73,13 @@ public class FlowLab {
 		    	String answer4 = scan.nextLine(); 
 		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer4);
 		    	if(newMagicBall > 75) {
-		    		newMagicBall = newMagicBall -75;
-		    	}
+		    		newMagicBall = newMagicBall - 75;
+		    		if(newMagicBall > 100) {
+		    			newMagicBall = newMagicBall - 100;
+		    		}else if(newMagicBall > 1000) {
+		    			newMagicBall = newMagicBall - 1000;
+		    		}//end of else if
+		    	}//end of outer if statement
 		    	if(answer4 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
