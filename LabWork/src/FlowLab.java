@@ -26,6 +26,9 @@ public class FlowLab {
 	
 	Random magicBall = new Random();
 	
+	int newMagicBall = 0;
+	int secondNewMagicBall = 0;
+	
 	if(input2.equals("yes") || input2.equals( "y")) {
 	
 		switch(ran.nextInt(7)) {
@@ -52,15 +55,11 @@ public class FlowLab {
 		    case 3:
 		    	System.out.println("What's your lucky number?: ");
 		    	String answer3 = scan.nextLine(); 
-		    	int newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer3);
-		    	if(newMagicBall > 75) {
+		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer3);
+		    	while(newMagicBall > 75) {
 		    		newMagicBall = newMagicBall - 75;
-		    		if(newMagicBall > 100) {
-		    			newMagicBall = newMagicBall - 100;
-		    		}else if(newMagicBall > 1000) {
-		    			newMagicBall = newMagicBall - 1000;
-		    		}//end of else if
-		    	}//end of outer if statement
+		    		newMagicBall--;
+	    		}//end of while loop
 		    	if(answer3 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
@@ -71,18 +70,14 @@ public class FlowLab {
 		    case 4:
 		    	System.out.println("Do you have a favorite quarterback? If so what is their jersey number?: ");
 		    	String answer4 = scan.nextLine(); 
-		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer4);
-		    	if(newMagicBall > 75) {
-		    		newMagicBall = newMagicBall - 75;
-		    		if(newMagicBall > 100) {
-		    			newMagicBall = newMagicBall - 100;
-		    		}else if(newMagicBall > 1000) {
-		    			newMagicBall = newMagicBall - 1000;
-		    		}//end of else if
-		    	}//end of outer if statement
+		    	secondNewMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer4);
+		    	while(secondNewMagicBall > 75) {
+		    		secondNewMagicBall = secondNewMagicBall - 75;
+		    		secondNewMagicBall--;
+	    		}//end of if statement
 		    	if(answer4 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
+		    		System.out.println( "MagicBall: " + secondNewMagicBall + " "  + " " + " Your Lotto Numbers: " 
 		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
 		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));		    	}
 		    	break;
