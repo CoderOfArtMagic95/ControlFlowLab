@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class AsciiChars {
 	//static List<Integer> numbers = new ArrayList<Integer>();
 	public static void printNumbers() {//fixed
-		for(int num = 0; num <= 256; num++) {
-           System.out.println("ASCII value: " + (char)num);// casts integer to char
+		for(int num = 48; num <= 126; num++) {
+           System.out.println(num  + "'s ASCII value is: " + (char)num);// casts integer to char
         }
 	}
     public static void printLowerCase(String s) {

@@ -36,6 +36,8 @@ public class FlowLab {
 	//for switch key
 	int keyQuestions = 5;
 	
+	boolean isDuplicate = false;
+	
 	if(input2.equals("yes") || input2.equals("y")) {
 	
 		/*I have edited my code by getting rid of cases, break statements, and added a 
@@ -98,6 +100,20 @@ public class FlowLab {
 		    		sum = sum - 65;
 		    		sum--;
 	    		}//end of while loop
+		    	
+		    	if(newMagicBall == thirdIndex || newMagicBall == lastDigits ||  newMagicBall == firstName 
+		    		|| newMagicBall == randomPick ||newMagicBall == sum) {
+		    		
+		    		isDuplicate = true;
+		    		if(isDuplicate == true) {
+		    			thirdIndex += thirdIndex;
+		    			lastDigits += lastDigits;
+		    			firstName += firstName;
+		    			randomPick += randomPick;
+		    			sum += sum;
+		    		}
+		    	}
+		    	
 		    	if(answer5 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
