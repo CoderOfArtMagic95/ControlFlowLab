@@ -3,8 +3,80 @@ import java.util.Scanner;
 
 public class FlowLab {
 	
+	public static void checkForDuplicates(int newMagicBall,int thirdIndex, int lastDigits,int randomPick,int firstName, int sum) {
+
+		boolean isDuplicate = false;
+		boolean compare1 = (newMagicBall == thirdIndex);
+		boolean compare2 = (newMagicBall == lastDigits);
+		boolean compare3 = (newMagicBall == randomPick);
+		boolean compare4 = (newMagicBall == firstName);
+		boolean compare5 = (newMagicBall == sum);
+		
+		boolean compare6 = (thirdIndex == lastDigits);
+		boolean compare7 = (thirdIndex == firstName);
+		boolean compare8 = (thirdIndex == randomPick);
+		boolean compare9 = (thirdIndex == sum);
+		
+		boolean compare10 = (lastDigits == firstName);
+		boolean compare11 = (lastDigits == randomPick);
+		boolean compare12 = (lastDigits == sum);
+		
+		boolean compare13 = (firstName == randomPick);
+		boolean compare14 = (firstName == sum);
+		
+		boolean compare15 = (randomPick == sum);
+		
+		if(compare1 == true || compare2 == true || compare3 == true || compare4 == true || compare5 == true) {
+	    		
+	    		isDuplicate = true;
+	    		if(isDuplicate == true) {
+	    			newMagicBall += 2;
+	    			
+	    			while(newMagicBall > 75) {
+			    		newMagicBall = newMagicBall - 75;
+			    		newMagicBall--;
+		    		}//end of while loop
+
+	    		}
+	    	}//end of if statement
+	    	
+		if(compare6 == true || compare7 == true || compare8 == true || compare9 == true || compare10 == true) {
+    		
+    		isDuplicate = true;
+    		if(isDuplicate == true) {
+    			thirdIndex += 2;
+    			
+    			while(thirdIndex > 65) {
+    				thirdIndex = thirdIndex - 65;
+    				thirdIndex--;
+	    		}//end of while loop
+
+    		}
+    	}//end of if statement
+		if(compare11 == true || compare12 == true || compare13 == true || compare14 == true || compare15 == true) {
+			isDuplicate = true;
+    		if(isDuplicate == true) {
+    			lastDigits += 2;
+    			firstName += 2;
+    			randomPick += 2;
+    			
+    			while(thirdIndex > 65 || firstName > 65 || randomPick > 65) {
+    				thirdIndex = thirdIndex - 65;
+    				thirdIndex--;
+    				
+    				firstName = firstName - 65;
+    				firstName--;
+    				
+    				randomPick = randomPick - 65;
+    				randomPick--;
+	    		}//end of while loop
+    		}//end of nested if statement
+    	}//end of if statement
+	    
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub	
 	Scanner scan = new Scanner(System.in);
 	System.out.println("Please enter your name");
 	String input = scan.nextLine();
@@ -35,8 +107,6 @@ public class FlowLab {
 	
 	//for switch key
 	int keyQuestions = 5;
-	
-	boolean isDuplicate = false;
 	
 	if(input2.equals("yes") || input2.equals("y")) {
 	
@@ -101,20 +171,9 @@ public class FlowLab {
 		    		sum--;
 	    		}//end of while loop
 		    	
-		    	if(newMagicBall == thirdIndex || newMagicBall == lastDigits ||  newMagicBall == firstName 
-		    		|| newMagicBall == randomPick ||newMagicBall == sum) {
-		    		
-		    		isDuplicate = true;
-		    		if(isDuplicate == true) {
-		    			thirdIndex += thirdIndex;
-		    			lastDigits += lastDigits;
-		    			firstName += firstName;
-		    			randomPick += randomPick;
-		    			sum += sum;
-		    		}
-		    	}
-		    	
 		    	if(answer5 != null) {
+		    		checkForDuplicates(newMagicBall, thirdIndex,
+		    				lastDigits,randomPick,firstName, sum);
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
 		    		+ thirdIndex + ", "+ lastDigits + ", "+ firstName + ", " 
