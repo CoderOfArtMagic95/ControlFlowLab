@@ -14,101 +14,95 @@ public class FlowLab {
 	
 	Random ran = new Random();
 	
-	Random ran1 = new Random();
-	
-	Random ran2 = new Random();
-	
-	Random ran3 = new Random();
-	
-	Random ran4 = new Random();
-	
-	Random ran5 = new Random();
-	
 	Random magicBall = new Random();
 	
+	//for switch case 2
 	int newMagicBall = 0;
-	int secondNewMagicBall = 0;
 	
-	if(input2.equals("yes") || input2.equals( "y")) {
+	//for switch case 1
+	char thirdLetter;
+	int  thirdIndex = 0;
 	
-		switch(ran.nextInt(7)) {
-		    case 1:
-		    	System.out.println("Do you have a red car? (yes, no): ");
-		    	String answer1 = scan.nextLine(); 
-		    	if(answer1 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		    		+ ran4.nextInt(65) + ", " + ran5.nextInt(65));
-		    	}
-		    	break;
-		    case 2:
+	//for switch case 	3
+	char carYearDigits; 
+	int lastDigits = 0;
+	
+	//for switch case 5
+	int randomPick;
+	
+	//for switch case 4
+	int firstName = 0;
+	
+	//for switch key
+	int keyQuestions = 5;
+	
+	if(input2.equals("yes") || input2.equals("y")) {
+	
+		/*I have edited my code by getting rid of cases, break statements, and added a 
+		 * default in the switch so it goes to all questions to get the lottery numbers*/
+		switch(keyQuestions) { 
+		  
+		    default:
 		    	System.out.println("What's your favorite pet's name?: ");
-		    	String answer2 = scan.nextLine();
-		    	if(answer2 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
-		    	}
-		    	break;
-		    case 3:
+		    	String answer1 = scan.nextLine();
+		    	thirdLetter = answer1.charAt(2);
+		    	thirdIndex = (int)thirdLetter * ran.nextInt(65);
+		    	
+		    	while(thirdIndex > 65) {
+		    		thirdIndex = thirdIndex - 65;
+		    		thirdIndex--;
+	    		}//end of while loop
+		    	
 		    	System.out.println("What's your lucky number?: ");
-		    	String answer3 = scan.nextLine(); 
-		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer3);
+		    	String answer2 = scan.nextLine(); 
+		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer2);
 		    	while(newMagicBall > 75) {
 		    		newMagicBall = newMagicBall - 75;
 		    		newMagicBall--;
 	    		}//end of while loop
-		    	if(answer3 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
-		    	}
-		    	break;
-		    case 4:
-		    	System.out.println("Do you have a favorite quarterback? If so what is their jersey number?: ");
-		    	String answer4 = scan.nextLine(); 
-		    	secondNewMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer4);
-		    	while(secondNewMagicBall > 75) {
-		    		secondNewMagicBall = secondNewMagicBall - 75;
-		    		secondNewMagicBall--;
-	    		}//end of if statement
-		    	if(answer4 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + secondNewMagicBall + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));		    	}
-		    	break;
-		    case 5:
+		    	
 		    	System.out.println("What's is the model year of your car?: ");
-		    	String answer5 = scan.nextLine();
+		    	String answer3 = scan.nextLine();
+		    	carYearDigits = (char) (answer3.charAt(2) + (char) (answer3.charAt(3))) ;
+		    	lastDigits = (int)carYearDigits * ran.nextInt(65);
+		    	while(lastDigits > 65) {
+		    		lastDigits = lastDigits - 65;
+		    		lastDigits--;
+	    		}//end of while loop 
+		    
+		    	System.out.println("What is the first name of your favorite actor or actress?: ");
+		    	String answer4 = scan.nextLine();
+		    	
+		    	firstName = answer4.charAt(0) + answer4.charAt(answer4.length() - 1);
+		    	firstName = firstName * ran.nextInt(65);
+		    	
+		    	while(firstName > 65) {
+		    		firstName = firstName - 65;
+		    		firstName--;
+	    		}//end of while loop
+		    	
+		    
+		    	System.out.println("Enter a random number between 1 and 50: ");
+		    	String answer5 = scan.nextLine(); 
+		    	
+		    	randomPick = answer5.charAt(0);
+		    	randomPick = randomPick * ran.nextInt(65);
+		    	
+		    	while(randomPick > 65) {
+		    		randomPick = randomPick - 65;
+		    		randomPick--;
+	    		}//end of while loop
+		    	
+		    	int sum = thirdIndex + lastDigits;// adds case 2 and 5 info 
+		    	while(sum > 65) {
+		    		sum = sum - 65;
+		    		sum--;
+	    		}//end of while loop
 		    	if(answer5 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
-		    	}
-		    	break;
-		    case 6:
-		    	System.out.println("What is the first name of your favorite actor or actress?: ");
-		    	String answer6 = scan.nextLine();
-		    	if(answer6 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
-		    	}
-		    	break;
-		    case 7:
-		    	System.out.println("Enter a random number between 1 and 50: ");
-		    	String answer7 = scan.nextLine(); 
-		    	if(answer7 != null) {
-		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
-		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
+		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
+		    		+ thirdIndex + ", "+ lastDigits + ", "+ firstName + ", " 
+		 		    + randomPick + ", " + sum);
 		    	}
 		    	break;
 		}//end of switch statement
@@ -116,8 +110,6 @@ public class FlowLab {
 		System.out.println("Please return later to complete the survey! Have a nice day");
 	}
 	scan.close();
-	
-	
 	}//end of main method
 
 }//end of ControlFlow Class
