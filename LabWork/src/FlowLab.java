@@ -52,9 +52,13 @@ public class FlowLab {
 		    case 3:
 		    	System.out.println("What's your lucky number?: ");
 		    	String answer3 = scan.nextLine(); 
+		    	int newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer3);
+		    	if(newMagicBall > 75) {
+		    		newMagicBall = newMagicBall -75;
+		    	}
 		    	if(answer3 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + (magicBall.nextInt(75) * Integer.parseInt(answer3))+ " "  + " " + " Your Lotto Numbers: " 
+		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
 		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
 		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
@@ -62,9 +66,13 @@ public class FlowLab {
 		    case 4:
 		    	System.out.println("Do you have a favorite quarterback? If so what is their jersey number?: ");
 		    	String answer4 = scan.nextLine(); 
+		    	newMagicBall = magicBall.nextInt(75) * Integer.parseInt(answer4);
+		    	if(newMagicBall > 75) {
+		    		newMagicBall = newMagicBall -75;
+		    	}
 		    	if(answer4 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    		System.out.println( "MagicBall: " + newMagicBall + " "  + " " + " Your Lotto Numbers: " 
 		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
 		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));		    	}
 		    	break;
@@ -83,7 +91,7 @@ public class FlowLab {
 		    	String answer6 = scan.nextLine();
 		    	if(answer6 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + (magicBall.nextInt(75) * Integer.parseInt(answer6)) + " "  + " " + " Your Lotto Numbers: " 
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
 		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
 		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
