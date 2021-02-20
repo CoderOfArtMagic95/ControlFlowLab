@@ -2,6 +2,7 @@
 import java.util.Scanner;
 //import java.util.ArrayList;
 
+//YOU STILL NEED TO FINISH SOME MORE PLEASE LOOK BACK AT VS CODE FOR INSTRUCTIONS
 public class AsciiChars {
 	//static List<Integer> numbers = new ArrayList<Integer>();
 	public static void printNumbers() {//fixed

@@ -9,7 +9,7 @@ public class FlowLab {
 	System.out.println("Please enter your name");
 	String input = scan.nextLine();
 	
-	System.out.println("Do you wish to continue(input 'yes' or 'y')");
+	System.out.println("Do you wish to continue(input 'yes' , 'y', or enter key to exit + enter)");
 	String input2 = scan.nextLine();
 	
 	Random ran = new Random();
@@ -36,9 +36,9 @@ public class FlowLab {
 		    	String answer1 = scan.nextLine(); 
 		    	if(answer1 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
 		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		    case 2:
@@ -46,9 +46,9 @@ public class FlowLab {
 		    	String answer2 = scan.nextLine();
 		    	if(answer2 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		    case 3:
@@ -56,29 +56,28 @@ public class FlowLab {
 		    	String answer3 = scan.nextLine(); 
 		    	if(answer3 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		    case 4:
-		    	System.out.println("Do you have a favorite quarterback? If so whar is their jersey number?: ");
+		    	System.out.println("Do you have a favorite quarterback? If so what is their jersey number?: ");
 		    	String answer4 = scan.nextLine(); 
 		    	if(answer4 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
-		    	}
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));		    	}
 		    	break;
 		    case 5:
 		    	System.out.println("What's is the model year of your car?: ");
 		    	String answer5 = scan.nextLine();
 		    	if(answer5 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		    case 6:
@@ -86,9 +85,9 @@ public class FlowLab {
 		    	String answer6 = scan.nextLine();
 		    	if(answer6 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		    case 7:
@@ -96,9 +95,9 @@ public class FlowLab {
 		    	String answer7 = scan.nextLine(); 
 		    	if(answer7 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println("Your Lotto Numbers: " + ran1.nextInt(65) + ", " 
-				    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-				    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + magicBall.nextInt(65));
+		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
+		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
+		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
 		    	}
 		    	break;
 		}//end of switch statement
