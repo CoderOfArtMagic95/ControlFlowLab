@@ -24,8 +24,6 @@ public class FlowLab {
 	
 	Random ran5 = new Random();
 	
-	Random ran6 = new Random();
-	
 	Random magicBall = new Random();
 	
 	if(input2.equals("yes") || input2.equals( "y")) {
@@ -37,8 +35,8 @@ public class FlowLab {
 		    	if(answer1 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    	    + ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		    		+ ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		    case 2:
@@ -47,8 +45,8 @@ public class FlowLab {
 		    	if(answer2 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		    case 3:
@@ -56,9 +54,9 @@ public class FlowLab {
 		    	String answer3 = scan.nextLine(); 
 		    	if(answer3 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    		System.out.println( "MagicBall: " + (magicBall.nextInt(75) * Integer.parseInt(answer3))+ " "  + " " + " Your Lotto Numbers: " 
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		    case 4:
@@ -67,8 +65,8 @@ public class FlowLab {
 		    	if(answer4 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));		    	}
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));		    	}
 		    	break;
 		    case 5:
 		    	System.out.println("What's is the model year of your car?: ");
@@ -76,8 +74,8 @@ public class FlowLab {
 		    	if(answer5 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		    case 6:
@@ -85,9 +83,9 @@ public class FlowLab {
 		    	String answer6 = scan.nextLine();
 		    	if(answer6 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
-		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    		System.out.println( "MagicBall: " + (magicBall.nextInt(75) * Integer.parseInt(answer6)) + " "  + " " + " Your Lotto Numbers: " 
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		    case 7:
@@ -96,8 +94,8 @@ public class FlowLab {
 		    	if(answer7 != null) {
 		    		System.out.println("Thanks " + input + ", here's your lotto ticket!");
 		    		System.out.println( "MagicBall: " + magicBall.nextInt(75) + " "  + " " + " Your Lotto Numbers: " 
-		    	    + ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", "+ ran4.nextInt(65) + ", " 
-		    		+ ran5.nextInt(65) + ", "+ ran6.nextInt(65) + ", " + ran1.nextInt(65));
+		    		+ ran1.nextInt(65) + ", "+ ran2.nextInt(65) + ", "+ ran3.nextInt(65) + ", " 
+		 		    + ran4.nextInt(65) + ", " + ran5.nextInt(65));
 		    	}
 		    	break;
 		}//end of switch statement
