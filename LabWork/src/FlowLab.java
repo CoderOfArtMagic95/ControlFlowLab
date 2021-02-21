@@ -5,8 +5,7 @@ public class FlowLab {
 	
 	public static void checkForDuplicates(int newMagicBall,int thirdIndex, int lastDigits,int randomPick,int firstName, int sum) {
        
-		//Try to fix duplicates issues and sort the numbers later
-		
+		// variables are used to help compare them and see if its true so its all set to boolean 
 		boolean compare1 = (newMagicBall == thirdIndex);
 		boolean compare2 = (newMagicBall == lastDigits);
 		boolean compare3 = (newMagicBall == randomPick);
@@ -26,6 +25,9 @@ public class FlowLab {
 		boolean compare14 = (firstName == sum);
 		
 		boolean compare15 = (randomPick == sum);
+		
+		/*checks for duplicates if its true for any one of the boolean variables they change one 
+		 * of the duplicates by adding up the duplicate value by 2 */
 		
 		if(compare1 == true || compare2 == true || compare3 == true || compare4 == true || compare5 == true) {
 			newMagicBall += 2;
