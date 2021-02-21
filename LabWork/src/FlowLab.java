@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class FlowLab {
 	
 	public static void checkForDuplicates(int newMagicBall,int thirdIndex, int lastDigits,int randomPick,int firstName, int sum) {
-
-		boolean isDuplicate = false;
+       
+		//Try to fix duplicates issues and sort the numbers later
+		
 		boolean compare1 = (newMagicBall == thirdIndex);
 		boolean compare2 = (newMagicBall == lastDigits);
 		boolean compare3 = (newMagicBall == randomPick);
@@ -27,53 +28,39 @@ public class FlowLab {
 		boolean compare15 = (randomPick == sum);
 		
 		if(compare1 == true || compare2 == true || compare3 == true || compare4 == true || compare5 == true) {
-	    		
-	    		isDuplicate = true;
-	    		if(isDuplicate == true) {
-	    			newMagicBall += 2;
-	    			
-	    			while(newMagicBall > 75) {
-			    		newMagicBall = newMagicBall - 75;
-			    		newMagicBall--;
-		    		}//end of while loop
-
-	    		}
-	    	}//end of if statement
+			newMagicBall += 2;
+			
+			while(newMagicBall > 75) {
+	    		newMagicBall = newMagicBall - 75;
+	    		newMagicBall--;
+    		}//end of while loop
+	    }//end of if statement
 	    	
 		if(compare6 == true || compare7 == true || compare8 == true || compare9 == true || compare10 == true) {
-    		
-    		isDuplicate = true;
-    		if(isDuplicate == true) {
-    			thirdIndex += 2;
-    			
-    			while(thirdIndex > 65) {
-    				thirdIndex = thirdIndex - 65;
-    				thirdIndex--;
-	    		}//end of while loop
-
-    		}
+			thirdIndex += 2;
+			
+			while(thirdIndex > 65) {
+				thirdIndex = thirdIndex - 65;
+				thirdIndex--;
+    		}//end of while loop
     	}//end of if statement
 		if(compare11 == true || compare12 == true || compare13 == true || compare14 == true || compare15 == true) {
-			isDuplicate = true;
-    		if(isDuplicate == true) {
-    			lastDigits += 2;
-    			firstName += 2;
-    			randomPick += 2;
-    			
-    			while(thirdIndex > 65 || firstName > 65 || randomPick > 65) {
-    				thirdIndex = thirdIndex - 65;
-    				thirdIndex--;
-    				
-    				firstName = firstName - 65;
-    				firstName--;
-    				
-    				randomPick = randomPick - 65;
-    				randomPick--;
-	    		}//end of while loop
-    		}//end of nested if statement
-    	}//end of if statement
-	    
-	}
+			lastDigits += 2;
+			firstName += 2;
+			randomPick += 2;
+			
+			while(thirdIndex > 65 || firstName > 65 || randomPick > 65) {
+				thirdIndex = thirdIndex - 65;
+				thirdIndex--;
+				
+				firstName = firstName - 65;
+				firstName--;
+				
+				randomPick = randomPick - 65;
+				randomPick--;
+    		}//end of while loop
+		}//end of if statement
+	}//end of checkForDuplicates method
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
